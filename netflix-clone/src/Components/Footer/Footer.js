@@ -47,7 +47,14 @@ function Footer() {
         </div>
         <div className="copy-write">
           &copy; 1997-1025 Netlix, Inc
-          <br /> developed by Biniyam kebere
+          <br /> developed by Biniyam kebere{" "}
+          <a
+            href="https://biniyamkebere.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click{" "}
+          </a>
         </div>
       </div>
     </div>

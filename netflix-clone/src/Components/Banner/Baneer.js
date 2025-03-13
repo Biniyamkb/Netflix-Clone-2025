@@ -9,7 +9,7 @@ function Baneer() {
     (async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log(request);
+
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -21,8 +21,8 @@ function Baneer() {
     })();
   }, []);
 
-  function truncate(str,n){
-    return str?.length>n?str.substr(0,n-1)+"....":str;
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "...." : str;
   }
 
   return (
